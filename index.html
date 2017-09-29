@@ -20,8 +20,20 @@
 			</center>			
 		</div>
 		<div id="column2" style="float:right; margin:0; width:50%;">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/wTL0t_HHkZI?autoplay=1" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
+	<script>
+		music = [	'DN9n7u2LE2w',
+					'qyYtKpFrjPQ',
+					'BHnKf1vQSnA',
+					'n5UkQ7T4PH0',
+					'0LBZJk5Kfgw',
+					'FzfyyyKcghc',
+					'subJNIByGuA'
+				];
+		let music_id = music[Math.floor(Math.random()*music.length)];
+		rightColumn = document.getElementById("column2");
+		rightColumn.innerHTML += '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + music_id + '?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+	</script>
 </body>
 </html>
