@@ -12,7 +12,7 @@
 	</style>
 </head>
 <body>
-	<div id="mainContent" style="margin: 0px auto; width: 80%">
+	<div id="mainContent" style="margin: 0px auto; width: 60%">
 		<div id="column1" style="float:left; margin:0; width:50%;">
 			<center>
 				<h1>ANTHONY VALLARIO</h1>
@@ -24,21 +24,19 @@
 				<a href="https://avallario.github.io/raymarcher/">raymarcher</a> 
 			</center>			
 		</div>
-		<div id="column2" style="float:left; margin:0; width:50%;">
-		</div>
+		<div id="column2" style="float:left; margin:0; width:50%;"></div>
 	</div>
 	<script>
 		music = [	'DN9n7u2LE2w',
 					'qyYtKpFrjPQ',
 					'BHnKf1vQSnA',
 					'n5UkQ7T4PH0',
-					'0LBZJk5Kfgw',
 					'FzfyyyKcghc',
 					'subJNIByGuA'
 				];
 		let music_id = music[Math.floor(Math.random()*music.length)];
 		rightColumn = document.getElementById("column2");
-		rightColumn.innerHTML += '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + music_id + '?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+		rightColumn.innerHTML += '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/' + music_id + '?autoplay=1" frameborder="0" allowfullscreen></iframe></center>';
 	</script>
 </body>
 </html>
