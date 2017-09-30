@@ -9,11 +9,17 @@
 			color: #FFFFFF;
 			font: 15px arial, sans-serif;
 		}
+		a:link {
+		    color: #550055;
+		}
+		a:visited {
+    		color: #550055;
+		}
 	</style>
 </head>
 <body>
 	<div id="mainContent" style="margin: 0px auto; width: 60%">
-		<div id="column1" style="float:left; margin:0; width:50%;">
+		<div id="column1" style="float:left; margin:0; width:50%">
 			<center>
 				<h1>ANTHONY VALLARIO</h1>
 				<br>
@@ -21,20 +27,38 @@
 				<br>
 				-
 				<br>
-				<a href="https://avallario.github.io/raymarcher/">raymarcher</a> 
+				<a href="https://avallario.github.io/raymarcher/">raymarcher</a>
+				<br>
 			</center>			
 		</div>
 		<div id="column2" style="float:left; margin:0; width:50%;"></div>
 	</div>
 	<script>
-		music = [	'DN9n7u2LE2w',
-					'qyYtKpFrjPQ',
-					'BHnKf1vQSnA',
-					'n5UkQ7T4PH0',
-					'FzfyyyKcghc',
-					'subJNIByGuA'
-				];
-		let music_id = music[Math.floor(Math.random()*music.length)];
+		let theme_id = Math.floor(Math.random()*4);
+		let music_id = "";
+		switch (theme_id) {
+			case 0:
+				//Orange theme
+				music_id = 'gTn16R5jwos';
+				document.body.style.backgroundColor = "#F39420";
+				document.body.style.color = "#262223";
+				break;
+			case 1:
+				music_id = 'CEIMSzQcnMI';
+				document.body.style.backgroundColor = "#F5D913";
+				document.body.style.color = "#000000";
+				break;
+			case 2:
+				music_id = 'JF34HVyCeVo';
+				document.body.style.backgroundColor = "#4988C9";
+				document.body.style.color = "#211C1D";
+				break;
+			case 3:
+				music_id = 'jkWiLHVY6jk';
+				document.body.style.backgroundColor = "#007264";
+				document.body.style.color = "#000000";	
+				break;
+		}
 		rightColumn = document.getElementById("column2");
 		rightColumn.innerHTML += '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/' + music_id + '?autoplay=1" frameborder="0" allowfullscreen></iframe></center>';
 	</script>
